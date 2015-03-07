@@ -20,6 +20,7 @@
     "grunt-sync": "~0.0.4",
     "include-all": "~0.1.3",
     "irelia": "^0.2.5",
+    "nconf": "^0.7.1",
     "rc": "~0.5.0",
     "sails": "~0.11.0",
     "sails-disk": "~0.10.0"
