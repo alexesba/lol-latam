@@ -18,6 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.2"
+    "bootstrap": "~3.3.2",
+    "bootstrap3-ie10-viewport-bug-workaround": "~1.0.0"
   }
 }
