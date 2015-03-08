@@ -1,7 +1,7 @@
 var Irelia = require('irelia');
 var configIrelia = require('nconf');
 
-configIrelia.argv().env().file({ file: 'config/lolcredentials.json'});
+configIrelia.argv().env().file({ file: 'config/lolcredentials.conf'});
 
 
 exports.lolAPI = new Irelia({
