@@ -12,5 +12,15 @@ describe(TEST_NAME, function(){
           done();
         });
     });
+
+    it('can\'t be stored if the user email is empty', function(done){
+        User.create({ email: '', name: 'demo'}, function(err, user){
+          expect(user).to.not.exist;
+          expect(err.Errors.email).to.exist;
+          expect(err.Errors.email[1].message).
+                   to.equal(User.validationMessages.email.required)
+          done();
+        });
+    });
   });
 });
