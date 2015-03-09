@@ -13,5 +13,5 @@ dbConfig  = require('nconf');
 
 dbConfig.env().argv().file({file: 'config/database.conf'});
 
-module.exports.models = dbConfig.get('model.default');
+module.exports.models = dbConfig.get('model').default;
 
