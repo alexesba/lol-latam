@@ -8,8 +8,17 @@
 module.exports = {
 
   attributes: {
-    name: { type: "string" },
+    name: { type: "string", unique: true, required: true },
     email: { type: "email" },
+  },
+
+
+  validationMessages: {
+     email: {
+          required: 'Email is required',
+          email: 'Provide valid email address',
+          unique: 'Email address is already taken'
+        }
   }
 };
 
